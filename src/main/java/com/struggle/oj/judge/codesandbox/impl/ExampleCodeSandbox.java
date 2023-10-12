@@ -3,9 +3,8 @@ package com.struggle.oj.judge.codesandbox.impl;
 import com.struggle.oj.judge.codesandbox.CodeSandbox;
 import com.struggle.oj.judge.codesandbox.model.ExecuteCodeRequest;
 import com.struggle.oj.judge.codesandbox.model.ExecuteCodeResponse;
-import com.struggle.oj.model.dto.questionsubmit.JudgeInfo;
+import com.struggle.oj.judge.codesandbox.model.JudgeInfo;
 import com.struggle.oj.model.enums.JudgeInfoMessageEnum;
-import com.struggle.oj.model.enums.QuestionSubmitLanguageEnum;
 import com.struggle.oj.model.enums.QuestionSubmitStatusEnum;
 import lombok.extern.slf4j.Slf4j;
 

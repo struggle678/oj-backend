@@ -1,4 +1,4 @@
-package com.struggle.oj.model.dto.questionsubmit;
+package com.struggle.oj.judge.codesandbox.model;
 
 import lombok.Data;
 

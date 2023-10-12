@@ -1,7 +1,7 @@
 package com.struggle.oj.judge.strategy;
 
 import com.struggle.oj.model.dto.question.JudgeCase;
-import com.struggle.oj.model.dto.questionsubmit.JudgeInfo;
+import com.struggle.oj.judge.codesandbox.model.JudgeInfo;
 import com.struggle.oj.model.entity.Question;
 import com.struggle.oj.model.entity.QuestionSubmit;
 import lombok.Data;

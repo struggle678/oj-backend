@@ -1,6 +1,6 @@
 package com.struggle.oj.judge.strategy;
 
-import com.struggle.oj.model.dto.questionsubmit.JudgeInfo;
+import com.struggle.oj.judge.codesandbox.model.JudgeInfo;
 
 /**
  * @author Mr.Chen

@@ -3,11 +3,12 @@ package com.struggle.oj.judge.strategy;
 import cn.hutool.json.JSONUtil;
 import com.struggle.oj.model.dto.question.JudgeCase;
 import com.struggle.oj.model.dto.question.JudgeConfig;
-import com.struggle.oj.model.dto.questionsubmit.JudgeInfo;
+import com.struggle.oj.judge.codesandbox.model.JudgeInfo;
 import com.struggle.oj.model.entity.Question;
 import com.struggle.oj.model.enums.JudgeInfoMessageEnum;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author Mr.Chen
@@ -23,8 +24,8 @@ public class JavaLanguageJudgeStrategy implements JudgeStrategy {
     @Override
     public JudgeInfo doJudge(JudgeContext judgeContext) {
         JudgeInfo judgeInfo = judgeContext.getJudgeInfo();
-        long memory = judgeInfo.getMemory();
-        long time = judgeInfo.getTime();
+        long memory = Optional.ofNullable(judgeInfo.getMemory()).orElse(0L);
+        long time = Optional.ofNullable(judgeInfo.getTime()).orElse(0L);
         List<String> inputList = judgeContext.getInputList();
         List<String> outputList = judgeContext.getOutputList();
         Question question = judgeContext.getQuestion();
